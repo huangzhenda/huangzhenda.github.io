@@ -95,3 +95,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Asides
+default_asides: [asides/recent_posts.html, asides/category_list.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
