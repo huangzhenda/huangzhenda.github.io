@@ -32,12 +32,14 @@ Octopress网址： [http://octopress.org/](http://octopress.org/)
 
 Octopress是建立在Jelly博客引擎的一个博客系统，能够为你生成html模块，css样式，javascript,并且能够自定义配置自己的博客。号称是hacker专属的博客系统（a bolgging framework for hackers）。
 
+<!---more--->
+
 ###Octopress安装
 
 安装过程主要经过几个步骤：git安装->ruby安装->从github clone octopress->安装octopress依赖项->安装octopress默认主题。
 
 ######1. git安装
-1. Octopress是基于 *git* ，所以在使用Octopress前，你应该能够知道一些shell以及git的基本操作。所以第一步就是确保你已经安装了Git。
+1. Octopress是基于 ```git``` ，所以在使用Octopress前，你应该能够知道一些shell以及git的基本操作。所以第一步就是确保你已经安装了Git。
  <pre>
   $ git --version
    git version 1.9.3 (Apple Git-50)
@@ -62,7 +64,7 @@ Octopress是建立在Jelly博客引擎的一个博客系统，能够为你生成
    $git clone git://github.com/sstephenson/rbenv.git .rbenv
    ```
    
-   (3) 将*~/.rbenv/bin*加到你的*$PATH*变量里以使你可以使用rbenv这个命令。
+   (3) 将```~/.rbenv/bin```加到你的```$PATH```变量里以使你可以使用rbenv这个命令。
 
    ```
    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -75,7 +77,7 @@ Octopress是建立在Jelly博客引擎的一个博客系统，能够为你生成
   echo 'eval "$(rbenv init -)"' >> ~/.bash_profile 
   ```
   
-  (5) 启动 shell让 $PATH 的修改 生效，现在可以使用 
+  (5) 启动 shell让 ```$PATH``` 的修改 生效，现在可以使用 
 
   ```
   rbenv了exec $SHELL	    
@@ -114,7 +116,7 @@ Octopress的源码是放在Github上，所以我们只要将Otopress克隆到我
 * _config.yml与 Rakefile是属于配置文件
 * source: 工作区目录
 * public: 存放本地的生成的博客。
-* _deploy: 这个目录你目前还没有，这个目录会在后面操作做，自动生成的，它包含了所有要被部署到远程仓库的新仓库。所指向的是 **master**分支。
+* _deploy: 这个目录你目前还没有，这个目录会在后面操作做，自动生成的，它包含了所有要被部署到远程仓库的新仓库。所指向的是 ```master```分支。
 * sass:
 
 
@@ -130,7 +132,7 @@ Octopress的源码是放在Github上，所以我们只要将Otopress克隆到我
 	```
  	$rake setup_githut_pates
 	```
-4. 执行后，就会上面说到的 *_deploy* 目录，这个亩留主要是存放部署到master分支的内容的。这期间会要求输入你 Github仓库的地址url。
+4. 执行后，就会上面说到的 ```_deploy``` 目录，这个亩留主要是存放部署到master分支的内容的。这期间会要求输入你 Github仓库的地址url。
 5. 完成上面命令后，继续执行下面命令：	
 	
 	```
