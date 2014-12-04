@@ -27,19 +27,21 @@ decription: 如何利用Octopress在Github搭建自己的博客
 * 写博客
 * 小结
 
+---
 ###Octopress 介绍
 Octopress网址： [http://octopress.org/](http://octopress.org/)
 
-Octopress是建立在Jelly博客引擎的一个博客系统，能够为你生成html模块，css样式，javascript,并且能够自定义配置自己的博客。号称是hacker专属的博客系统（a bolgging framework for hackers）。
+Octopress是建立在Jekyll博客引擎的一个博客系统，能够为你生成html模块，css样式，javascript,并且能够自定义配置自己的博客。号称是hacker专属的博客系统（a bolgging framework for hackers）。
 
 <!---more--->
 
+---
 ###Octopress安装
 
 安装过程主要经过几个步骤：git安装->ruby安装->从github clone octopress->安装octopress依赖项->安装octopress默认主题。
 
 ######1. git安装
-1. Octopress是基于 ```git``` ，所以在使用Octopress前，你应该能够知道一些shell以及git的基本操作。所以第一步就是确保你已经安装了Git。
+  Octopress是基于 ```git``` ，所以在使用Octopress前，你应该能够知道一些shell以及git的基本操作。所以第一步就是确保你已经安装了Git。
  <pre>
   $ git --version
    git version 1.9.3 (Apple Git-50)
@@ -99,13 +101,12 @@ Octopress的源码是放在Github上，所以我们只要将Otopress克隆到我
 	
 	$git clone git://github.com/imathis/octopress.git octopress
 	$cd octopress 
-
 #####4.安装依赖项
 
 	$gem install bundler
 	$rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
 	$bundle install
-
+	
 #####5.安装默认的Octopress主题
 	rake install
 	
@@ -122,7 +123,7 @@ Octopress的源码是放在Github上，所以我们只要将Otopress克隆到我
 
 - - - - 
 ###部署博客到Github
- Octopress可以将博客部署到Github,,和自己的主机上。这里介绍的是部署到Github上。
+ Octopress可以将博客部署到Github,Heroku,和自己的主机上。这里介绍的是部署到Github上。
 
 1. GitHub可以免费托管的Git社区。GitHub的Page Service可以免费托管博客，并且可以自定义域名。
 那么首先要先到GitHub上注册个账号。<https://github.com>
