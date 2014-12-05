@@ -27,13 +27,14 @@ decription: 如何利用Octopress在Github搭建自己的博客
 * 写博客
 * 小结
 
+<!-- more -->
+
 ---
 ###Octopress 介绍
 Octopress网址： [http://octopress.org/](http://octopress.org/)
 
 Octopress是建立在Jekyll博客引擎的一个博客系统，能够为你生成html模块，css样式，javascript,并且能够自定义配置自己的博客。号称是hacker专属的博客系统（a bolgging framework for hackers）。
 
-<!---more--->
 
 ---
 ###Octopress安装
