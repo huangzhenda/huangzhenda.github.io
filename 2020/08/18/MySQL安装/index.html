@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>MySQL安装 (Mac ) | 黄啊达在敲代码</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安装 安装环境 mysql: 8.0.21 macos10.15    通过Native Packages安装 MySQL下载地址：https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F; 官方安装说明： https:&#x2F;&#x2F;dev.mysql.com&#x2F;doc&#x2F;refman&#x2F;8.0&#x2F;en&#x2F;osx-installation.html 安装路径： &#x2F;usr&#x2F;local&#x2F;mysql 设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL安装 (Mac )">
+<meta property="og:url" content="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/index.html">
+<meta property="og:site_name" content="黄啊达在敲代码">
+<meta property="og:description" content="安装 安装环境 mysql: 8.0.21 macos10.15    通过Native Packages安装 MySQL下载地址：https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F; 官方安装说明： https:&#x2F;&#x2F;dev.mysql.com&#x2F;doc&#x2F;refman&#x2F;8.0&#x2F;en&#x2F;osx-installation.html 安装路径： &#x2F;usr&#x2F;local&#x2F;mysql 设置">
+<meta property="og:locale" content="zh">
+<meta property="og:image" content="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/1.png">
+<meta property="og:image" content="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/2.png">
+<meta property="og:image" content="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/3.png">
+<meta property="article:published_time" content="2020-08-17T16:21:33.000Z">
+<meta property="article:modified_time" content="2020-08-21T01:14:04.576Z">
+<meta property="article:author" content="hwangada">
+<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="MySQL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="黄啊达在敲代码" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">黄啊达在敲代码</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">专注，极致</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://huangzhenda.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MySQL安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2020-08-17T16:21:33.000Z" itemprop="datePublished">2020-08-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MySQL安装 (Mac )
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>安装环境<ul>
+<li>mysql: 8.0.21</li>
+<li>macos10.15</li>
+</ul>
+</li>
+</ul>
+<h3 id="通过Native-Packages安装"><a href="#通过Native-Packages安装" class="headerlink" title="通过Native Packages安装"></a>通过Native Packages安装</h3><ul>
+<li>MySQL下载地址：<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/</a></li>
+<li>官方安装说明： <a href="https://dev.mysql.com/doc/refman/8.0/en/osx-installation.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/8.0/en/osx-installation.html</a></li>
+<li>安装路径： /usr/local/mysql</li>
+<li>设置环境变量：export PATH=${PATH}:/usr/local/mysql/bin </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;开启</span><br><span class="line">sudo &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;support-files&#x2F;mysql.server start</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;关闭</span><br><span class="line">sudo &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;support-files&#x2F;mysql.server stop</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;重启MySQL服务</span><br><span class="line">sudo &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;support-files&#x2F;mysql.server restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过Homebrew安装"><a href="#通过Homebrew安装" class="headerlink" title="通过Homebrew安装"></a>通过Homebrew安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew search mysql &#x2F;&#x2F;搜索</span><br><span class="line">brew install mysql&#x2F;&#x2F;安装</span><br><span class="line">brew install mysql@5.7&#x2F;&#x2F;指定版本安装</span><br></pre></td></tr></table></figure>
+
+<h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><h3 id="通过preference-pane-卸载"><a href="#通过preference-pane-卸载" class="headerlink" title="通过preference pane 卸载"></a>通过<strong>preference pane</strong> 卸载</h3><ul>
+<li><p>保证安装的时候， preference pane 有勾选。</p>
+<img src="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/1.png" class="" title="安装-自定义">
+</li>
+<li><p>安装后，就可以在  <strong>系统偏好设置</strong> 出现 MySQL</p>
+<img src="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/2.png" class="" title="系统偏好设置">
+
+
+</li>
+</ul>
+<ul>
+<li>卸载入口<img src="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/3.png" class="" title="卸载">
+
+
+</li>
+</ul>
+<h3 id="手动删除"><a href="#手动删除" class="headerlink" title="手动删除"></a>手动删除</h3><p>网上找了卸载的方式：<br><a href="https://jingwei.link/2019/10/19/mac-mysql-reinstall.html?utm_source=tuicool&utm_medium=referral" target="_blank" rel="noopener">原文链接</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">brew remove mysql</span><br><span class="line">brew cleanup</span><br><span class="line">sudo rm &#x2F;usr&#x2F;local&#x2F;mysql</span><br><span class="line">sudo rm -rf &#x2F;usr&#x2F;local&#x2F;mysql*</span><br><span class="line">sudo rm -rf &#x2F;usr&#x2F;local&#x2F;var&#x2F;mysql</span><br><span class="line">sudo rm ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.mysql.plist</span><br><span class="line">sudo rm -rf &#x2F;Library&#x2F;StartupItems&#x2F;MySQLCOM</span><br><span class="line">sudo rm -rf &#x2F;Library&#x2F;PreferencePanes&#x2F;My*</span><br><span class="line">launchctl unload -w ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.mysql.plist</span><br><span class="line">edit &#x2F;etc&#x2F;hostconfig and remove the line MYSQLCOM&#x3D;-YES-</span><br><span class="line">rm -rf ~&#x2F;Library&#x2F;PreferencePanes&#x2F;My*</span><br><span class="line">sudo rm -rf &#x2F;Library&#x2F;Receipts&#x2F;mysql*</span><br><span class="line">sudo rm -rf &#x2F;Library&#x2F;Receipts&#x2F;MySQL*</span><br><span class="line">sudo rm -rf &#x2F;private&#x2F;var&#x2F;db&#x2F;receipts&#x2F;com.mysql.*</span><br><span class="line">rm ~&#x2F;Library&#x2F;Cache&#x2F;Homebrew&#x2F;mysql*&#96;</span><br></pre></td></tr></table></figure>
+<p>这么多文件，到底是不是真的需要？</p>
+<ul>
+<li>通过brew安装的话， 卸载相对简单。 通过 brew 命令行进行卸载。</li>
+<li>通过安装包安装的话，要删除相对应的文件。</li>
+</ul>
+<p>大体上有几个路径： <strong>/usr/local/</strong> , <strong>~/Library/</strong>,  <strong>/Library/</strong>, *<em>/private/var/db/receiptes<br>*</em></p>
+<ul>
+<li>usr: <code>usr</code> 不是 <code>user</code> 的意思，而是 <code>Unix Software Resource</code> 的缩写，也就是 Unix 操作系统软件资源所放置的目录； 所有系统默认的软件都放在 <code>/usr</code>, 用户自行安装的 ，一般安装到<code>/usr/local</code> , 这样就容易管理。 因此 MySql 的安装目录就在 /usr/local/ 下。 所以需要删除这目录下，mysql相关的文件。</li>
+<li>Library :  MacOS专有的目录， 存放系统资源库以及用户的资源库相关的文件。<code>/Library/StartupItems</code> 定义了系统启动过程中运行的程序，<code>/Library/LaunchAgents</code> 定义了登录启动项，<code>/Library/PreferencePanes</code> 定义了系统偏好设置面板中的配置项，/Library/Receipts 存储的是应用的”票据“，类似于权限配置文件，以此类推 <code>/private/var/db/receipts/</code> 里存放的也是类似的权限配置文件。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://huangzhenda.github.io/2020/08/18/MySQL%E5%AE%89%E8%A3%85/" data-id="cke3it0gg0001n74u33hx95bf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/07/25/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">java学习笔记-基础</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tools/">tools</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/">MySQL安装 (Mac )</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80/">java学习笔记-基础</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-JShell/">Java学习笔记-JShell</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/14/Java%E6%A6%82%E8%BF%B0/">Java学习笔记 - 概述</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/03/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%9A%84%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9A%84%E5%8D%9A%E5%AE%A2/">如何免费的搭建个人的博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 hwangada<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

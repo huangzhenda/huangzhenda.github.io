@@ -5,18 +5,19 @@
   
 
   
-  <title>tags | 黄啊达在敲代码</title>
+  <title>java学习笔记-基础 | 黄啊达在敲代码</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="iOS开发者，笨鸟先飞">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://huangzhenda.github.io/tags/index.html">
+  <meta name="description" content="标识符与关键字 标识符定义： 字母、数字、_、$ 以英文字母开头。   关键字： 系统对一些结构的描述处理，有特殊含义。  数据类型 基础类型 整型： byte 、 short 、 int 、long  -&gt; 默认值 0 浮点型： float 、double -&gt; 默认值：0.0 布尔型： boolean -&gt; 默认值： false 字符型： char -&gt; 默认值：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java学习笔记-基础">
+<meta property="og:url" content="https://huangzhenda.github.io/2020/07/25/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="黄啊达在敲代码">
-<meta property="og:description" content="iOS开发者，笨鸟先飞">
+<meta property="og:description" content="标识符与关键字 标识符定义： 字母、数字、_、$ 以英文字母开头。   关键字： 系统对一些结构的描述处理，有特殊含义。  数据类型 基础类型 整型： byte 、 short 、 int 、long  -&gt; 默认值 0 浮点型： float 、double -&gt; 默认值：0.0 布尔型： boolean -&gt; 默认值： false 字符型： char -&gt; 默认值：">
 <meta property="og:locale" content="zh">
-<meta property="article:published_time" content="2020-01-06T16:18:49.000Z">
-<meta property="article:modified_time" content="2020-07-01T08:06:57.530Z">
+<meta property="article:published_time" content="2020-07-25T15:24:07.000Z">
+<meta property="article:modified_time" content="2020-08-21T00:53:16.038Z">
 <meta property="article:author" content="hwangada">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="黄啊达在敲代码" type="application/atom+xml">
@@ -70,12 +71,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-java学习笔记-基础" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/tags/index.html" class="article-date">
-  <time datetime="2020-01-06T16:18:49.000Z" itemprop="datePublished">2020-01-07</time>
+    <a href="/2020/07/25/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80/" class="article-date">
+  <time datetime="2020-07-25T15:24:07.000Z" itemprop="datePublished">2020-07-25</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java/">java</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -84,7 +89,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      java学习笔记-基础
     </h1>
   
 
@@ -92,17 +97,88 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="标识符与关键字"><a href="#标识符与关键字" class="headerlink" title="标识符与关键字"></a>标识符与关键字</h2><ul>
+<li>标识符定义：<ul>
+<li>字母、数字、_、$</li>
+<li>以英文字母开头。</li>
+</ul>
+</li>
+<li>关键字： 系统对一些结构的描述处理，有特殊含义。</li>
+</ul>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
+<li>基础类型<ul>
+<li>整型： byte 、 short 、 int 、long  -&gt; 默认值 0</li>
+<li>浮点型： float 、double -&gt; 默认值：0.0</li>
+<li>布尔型： boolean -&gt; 默认值： false</li>
+<li>字符型： char -&gt; 默认值：    <code>\u0000</code></li>
+</ul>
+</li>
+<li>引用类型<ul>
+<li>数组、类型、接口 -&gt; 默认值： null</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据范围！！！！"><a href="#数据范围！！！！" class="headerlink" title="数据范围！！！！"></a>数据范围！！！！</h3><ul>
+<li>如何处理超出的数据范围？ -&gt; 如果超过最大的保存范围，会进行循环。 在java中成为数据溢出。</li>
+<li>解决数据溢出： <ul>
+<li>在操作的时候预估数据范围，如果发现范围不够就使用更大的范围。</li>
+<li>可以直接追击 L 或者 long的转型。</li>
+</ul>
+</li>
+<li>所有的数据类型进行自动转型的时候都是由小类型向大类型进行自动转换处理的。</li>
+<li>浮点型，默认是double。float需要添加 f/F。 float不精确。 </li>
+</ul>
+<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><ul>
+<li>数字运算</li>
+<li>条件运算</li>
+<li>逻辑运算</li>
+<li>位运算 ： 可以直接进行二进制数据的计算处理。<ul>
+<li>与&amp;、或｜、异或^、反码～、移位&gt;&gt; &lt;&lt;</li>
+</ul>
+</li>
+</ul>
+<h2 id="逻辑控制"><a href="#逻辑控制" class="headerlink" title="逻辑控制"></a>逻辑控制</h2><ul>
+<li>条件 if</li>
+<li>switch开关</li>
+<li>循环<ul>
+<li>while</li>
+<li>do …… while</li>
+<li>for</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://huangzhenda.github.io/tags/index.html" data-id="ckca653b900003r4nb70j8ao3" class="article-share-link">Share</a>
+      <a data-url="https://huangzhenda.github.io/2020/07/25/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80/" data-id="cke3it0gj0004n74ue6xg89my" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2020/08/18/MySQL%E5%AE%89%E8%A3%85/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          MySQL安装 (Mac )
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/25/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-JShell/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java学习笔记-JShell</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
