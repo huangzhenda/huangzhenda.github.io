@@ -134,13 +134,10 @@
 <li>卸载后， 发现 <code>/private/var/db/receipts/</code>下，<code>com.mysql</code>相关的文件没有删除。手动删除了！！！</li>
 </ul>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
-<li>设置密码： </li>
+<li>设置密码： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u user_name -h host_name password &quot;password&quot;</span><br></pre></td></tr></table></figure>
+或者<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; &#x3D; PASSWORD(&#39;你的新密码&#39;);</span><br></pre></td></tr></table></figure>
+或者</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u user_name -h host_name password &quot;password&quot;</span><br></pre></td></tr></table></figure>
-<p>或者eixt</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; &#x3D; PASSWORD(&#39;你的新密码&#39;);</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER USER() IDENTIFIED BY &#39;password&#39;;</span><br></pre></td></tr></table></figure>
 
 <p>或者</p>
